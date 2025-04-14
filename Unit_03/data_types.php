@@ -69,3 +69,15 @@ var_dump($name !== 'Dez'); // false
 
 var_dump($meaning === '42'); // false, because it is comparing an integer type to a string type
 var_dump($meaning == '42');  // true, because we are not comparing the type only the value
+
+// If we want to check if a variable exists or not, we use the isset function
+var_dump(isset($name)); // This would return true, because I do have the variable $name set so it does exist.
+var_dump(isset($mamba)); // This would return false, because I do not have the variable $mamba set so it does not exist.
+
+var_dump(empty($name)); // This would return false, because I have a variable $name set and it is NOT empty.
+var_dump(empty($mamba)); // This would return true, because I do not have a variable $mamba set and it is read as empty. If $mamba was a defined but empty string, this would also return true.
+
+// If we wanted to completely remove a variable, then we can use unset. This only applies to code below the unset, as it is read from top to bottom. 
+unset($test_num);
+
+
