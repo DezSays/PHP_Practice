@@ -36,3 +36,36 @@ $test_num = 1;
 $test_num = $test_num + 2;
 
 // Now, test_num will be 3.
+
+// We can use the var_dump function to help debug better than just using echo. For strings:
+var_dump('Hello from var-dump');
+
+// For integers
+var_dump(42);
+
+// For floating point number
+var_dump(3.14);
+
+// This will return int(9)
+var_dump('4' + 5);
+
+// Use var_dump with a variable
+$message = 'Howdy friend!';
+var_dump($message);
+
+// Passing in booleans
+var_dump(true);
+var_dump(false);
+
+// Compare conditions and return true/false
+$meaning = 42;
+var_dump($meaning > 13);  // true
+var_dump($meaning < 13);  // false
+var_dump($meaning >= 13); // true
+
+$name = 'Dez';
+var_dump($name === 'Dez'); // true
+var_dump($name !== 'Dez'); // false
+
+var_dump($meaning === '42'); // false, because it is comparing an integer type to a string type
+var_dump($meaning == '42');  // true, because we are not comparing the type only the value
