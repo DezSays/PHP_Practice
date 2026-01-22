@@ -54,7 +54,7 @@ $message = 'Howdy friend!';
 var_dump($message);
 
 // Passing in booleans
-var_dump(true);
+var_dump(true); // or !false would also be true
 var_dump(false);
 
 // Compare conditions and return true/false
@@ -79,5 +79,3 @@ var_dump(empty($mamba)); // This would return true, because I do not have a vari
 
 // If we wanted to completely remove a variable, then we can use unset. This only applies to code below the unset, as it is read from top to bottom. 
 unset($test_num);
-
-

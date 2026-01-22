@@ -20,6 +20,7 @@
         } 
 
         // Ideally, use an if/else if/else for multiple conditional statements, just like in js.
+        // Use &&, || just like in js as well. Use xor for either or, meaning you need to have one boolean set to true on one side and false on the other, like if(true xor false){logic here}.  
         ?>
     </pre>
 </body>
